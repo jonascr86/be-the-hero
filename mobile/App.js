@@ -1,19 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+
+import Routes from './src/routes';
+import logImg from './src/assets/logo.png'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello World! The first app React Native</Text>
-    </View>
+    <Routes />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
